@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(132, 165, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+a{
+    font-size: 2em;
+    padding: 10px;
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+    color: rgb(53, 52, 52);
+}
