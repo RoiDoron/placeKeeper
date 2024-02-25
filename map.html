@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/places.css">
     <title>map</title>
 </head>
+
 <body onload=" onInit()">
+
+    <header>
+        <h1>Place Keeper</h1>
+        <h3>Find your way back to your best places</h3>
+        <a href="http://127.0.0.1:5500/index.html">Home</a>
+        <a href="http://127.0.0.1:5500/map.html">map</a>
+        <a href="http://127.0.0.1:5500/user-prefs.html">User</a>
+    </header>
+    <main class="main-container">
+        <div class="map">map</div>
+        <div class="palces">
+            <h2>Places</h2>
+            <ul class="places-list"></ul>
+        
+        </div>
+    </main>
+
+
     <script src="/js/service/utill.service.js"></script>
     <script src="/js/service/storage.service.js"></script>
     <script src="/js/service/user.service.js"></script>
     <script src="/js/service/place.service.js"></script>
-    <script src="/js/user.controler.js"></script>
     <script src="/js/place.controller.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDERJQQU0H0DLsEgZ8yOWQCYgd1-gcgBQY">
+    </script>
 </body>
+
 </html>

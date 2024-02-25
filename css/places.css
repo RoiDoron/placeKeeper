@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 980px) minmax(20px, 1fr);
+    text-align: center;
+}
+
+header {
+    background-color: lightblue;
+    grid-area: 1/2;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: minmax(400px,4fr) minmax(100px,1fr) ;
+    grid-area: 2/2;
+}
+
+.main-container .map {
+    grid-area: 1/1;
+    text-align: center;
+    justify-content: center;
+}
+.main-container .palces{
+    grid-area: 1/2;
+
+}
+
+.palces{
+    background-color: lightblue;
+}
