@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/user.css">
     <title>user prefs</title>
 </head>
-<body>
-    
+<body onload=" onInit()">
+    <form>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" onchange="onSetEmail(value)">
+
+        <label for="age">Age:<span class="age">26</span> </label>
+        <input type="range" id="age" name="age" min="18" max="120" value="26"
+        onchange="onAge(value)">
+
+        <h2>colors-</h2>
+
+        <label for="background-color">Set Background Color</label>
+        <input type="color" onchange="onBackgroundColor(value)">
+
+        <label for="text-color">Set Text Color</label>
+        <input type="color" onchange="onColor(value)">
+
+        <label for="birth-date">Birth Date</label>
+        <input type="date" onchange="onBirthDay(value)">
+
+        <label for="birth-time">Birth Time</label>
+        <input type="time" onchange="onBirthTime(value)">
+
+        <button>set</button>
+
+
+    </form>
+    <script src="js/service/storage.service.js"></script>
+    <script src="js/service/user.service.js"></script>
+    <script src="js/user.controler.js"></script>
+
 </body>
 </html>
